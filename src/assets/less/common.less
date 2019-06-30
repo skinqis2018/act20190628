@@ -2,3 +2,134 @@ html, body{
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 10px;
+}
+.banner {
+  font-size: 0;
+  &__bg {
+    width: 100%
+  }
+  &__position {
+    width: 29.56rem;
+    position: absolute;
+    left: 1.225rem;
+    top: 20.4rem
+  }
+  &__btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >img {
+      width: 12.33rem
+    }
+  }
+}
+.list {
+  background: url(../../img/list_bg.png) left top no-repeat;
+  background-size: 100% auto;
+  header {
+    width: 100%;
+    text-align: center;
+    >img {
+      margin-top: 2.5rem;
+      width: 17.12rem
+    }
+  }
+  &__content {
+    width: 28.93rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap
+  }
+  &__item {
+    width: 13.1rem;
+    margin-bottom: 1.2rem;
+    &__poster {
+      width: 100%
+    }
+    &__info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__anchor {
+        width: 9.34rem;
+        display: flex;
+        align-items: center;
+        overflow:hidden;
+        >img {
+          width: 2.6rem;
+          border-radius: 45px;
+          margin-right: .2rem
+        }
+        >span {
+          display: inline-block;
+          width: 6.54rem;
+          overflow:hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap
+        }
+      }
+      &__follow {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        >img {
+          width: 1rem;
+          margin-right: .2rem
+        }
+      }
+    }
+  }
+  footer {
+    width: 16.23rem;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(222, 186, 145);
+    .pre {
+      >img {
+        width: 2.39rem
+      }
+    }
+    .next {
+      text-align: right;
+      >img {
+        width: 2.39rem;
+        transform: rotate(180deg)
+      }
+    }
+  }
+}
+.prize {
+  >img {
+    width: 100%
+  }
+}
+.rule {
+  color: rgb(222, 186, 145);
+  padding-bottom: 7rem;
+  background: url('../../img/rule-bg.png') right 12.19rem no-repeat;
+  background-size: 10.88rem auto;
+  header {
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bolder
+  }
+  &__content {
+    width: 27.73rem;
+    margin: .6rem auto
+  }
+}
+.activePage {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration:underline
+}
