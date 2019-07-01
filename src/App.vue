@@ -4,6 +4,7 @@
     <ActList />
     <ActPrize />
     <ActRule />
+    <ActMsg />
   </div>
 </template>
 
@@ -13,6 +14,7 @@
   import ActList from './views/act-list'
   import ActPrize from './views/act-prize'
   import ActRule from './views/act-rule'
+  import ActMsg from './views/act-msg'
 
   export default {
     name: 'App',
@@ -20,7 +22,8 @@
       ActBanner,
       ActList,
       ActPrize,
-      ActRule
+      ActRule,
+      ActMsg
     }
   }
 </script>
